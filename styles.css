@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+    /*Imagen del ceti*/
+    background: linear-gradient(to right, rgba(50, 70, 80, 0.495), rgba(3, 104, 166, 0.495)), url(background.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: 0px -37vw; 
+    /*Contenedor*/
+    height: 27vw;
+    padding: 3vw;
+    /*Letras*/
+    color: #FFF;
+    font-size: calc(12px + .8vw);
+    text-shadow: 1px 1px 2px rgb(51, 51, 51);
+}
+
+#title-container{
+    float: left;
+    width: 80%;
+}
+
+#logo-container{
+    float: right;
+    width: 10%;
+    padding: 0px;
+}
+
+#logo{
+    width: calc(50px + 4vw);
+    padding: 0px;
+}
+
+nav{
+    /*Contenedor*/
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: calc(10px + 1vh);
+    background-color: #0367A6;
+    /*Borde*/
+    border: 2px solid #004e7f;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;   
+}
+
+nav>a {
+    /*Letras*/
+    color: #FFF;
+    font-size: calc(10px + 1.2vw);
+    font-weight:500;
+    text-decoration: none;
+}
+
+body{
+    display:flex; 
+    flex-direction:column; 
+}
+
+aside {
+    /*Contenedor*/
+    margin-right: 3vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-top: 15px;
+    width: 30%;
+    /*Borde*/
+    box-shadow: 5px 10px #888888;
+    border:2px solid black;
+    border-radius: 10px;
+    /*Letras*/
+    float: right;
+    font-size: 1.4vw;
+}
+
+aside>h3{
+    /*Letras*/
+    font-size: 1.7vw;
+    font-weight: 600;
+    /*Contenedor*/
+    margin-top: 1vh;
+}
+
+#login>input{
+    /*Contenedor*/
+    width: 100%;
+    height: calc(10px + 2vh);
+}
+
+#submit-login{
+    /*Contenedor*/
+    width: 100%;
+    margin-top: 3vh;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #F26E22;
+    /*Letras*/
+    color: #FFF;
+    font-size: 1.4vw;
+    /*Borde*/
+    border-radius: 8px;
+    border-width: 0px;
+}
+
+#register{
+    /*Letras*/
+    color: #000;
+    /*Contenedor*/
+    display: block;
+    margin-top: .5vw;
+    margin-bottom: .5vw;
+    
+}   
+
+section {
+    /*Contenedor*/
+    float: left;
+    height: 30vh;
+    width: 60%;
+    margin: 3vw;
+    padding: 1.5vw;
+    /*Borde*/
+    border: solid #000;
+    border-width: 2px;
+    border-radius: 10px;
+    /*Sombra*/   
+    box-shadow: 5px 10px #888888;
+}
+
+footer{
+    /*Contenedor*/
+    margin-top:auto; 
+    margin-top: 2vh;
+    background-color: #005183;
+    /*Letras*/
+    color: #FFF;
+}
+
+
+@media (max-width: 700px) {
+    header{
+        /*Letras*/
+        font-size: calc(5px + 1vw);
+    }
+
+    #logo-container{
+        /*Contenedor*/
+        margin-right: 18px;
+    }
+
+    aside {
+        /*Contenedor*/
+        float: none;
+        width: 100%;
+    }
+
+    aside>form>label{
+        /*Letras*/
+        font-size: 15px;
+        margin-top: 2px;
+        display: block;
+    }
+
+    aside>h3{
+        /*Letras*/
+        font-size: 20px;
+    }
+
+
+    section{
+        /*Contenedor*/
+        float: none;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    #submit-login{
+        /*Letras*/
+        font-size: 15px;
+    }
+
+    #register{
+        /*Letras*/
+        color: #000;
+        font-size: 12px ;
+        font-weight: 500;
+        /*Contenedor*/
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
