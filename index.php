@@ -14,7 +14,7 @@
     <header>
         <div id="title-container">
             <h1>Centro de Enseñanza Tecnica Industrial<br>Plantel Tonalá</h1>
-            <h2>Servicios de Red y Computo Nube</h2>
+            <h2>Seguirdad de software</h2>
         </div>
         <div id="logo-container">
             <img src="logo.svg" alt="Logo CETI" id="logo"/>
