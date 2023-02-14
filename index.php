@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <?php
+        include 'connect.php';
+    ?>
     <header>
         <div id="title-container">
             <h1>Centro de Enseñanza Tecnica Industrial<br>Plantel Tonalá</h1>
@@ -28,11 +31,11 @@
     <main>
         <aside>
             <h3>Inicia Sesion</h3>
-            <form>
+            <form action="login.php" method="post">
                 <label for="">Usuario:</label><br>
-                <input type="text" id="" name=""><br>
+                <input type="text" id="username" name="username"><br>
                 <label for="">Contraseña:</label><br>
-                <input type="password" id="" name="">
+                <input type="password" id="password" name="password">
                 <br>
                 <button id="submit-login" type="submit">Entrar</button>
             </form>
@@ -45,8 +48,5 @@
             </section>
         </article>
     </main> 
-    <footer>
-        <p>Hecho por: Jonathan Daniel Gomez Peña</p>
-    </footer>
 </body>
 </html>
